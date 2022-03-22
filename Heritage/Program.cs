@@ -1,9 +1,6 @@
 ﻿using Heritage.Entities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Heritage
 {
@@ -12,9 +9,43 @@ namespace Heritage
         static void Main(string[] args)
         {
 
-            BussinessAccount ba = new BussinessAccount(100,"Rodrigo",1000.00,100.00);
+            Account acc = new Account(1001, "Alex", 0.0);
+            BussinessAccount bacc = new BussinessAccount(1002, "Maria", 0.0, 500.0);
 
-            Console.WriteLine(ba.Balance);
+            //UPCASTING 
+            Account acc1 = bacc;
+            Account acc2 = new BussinessAccount(1003, "Bob", 0.0, 200.0);
+            Account acc3 = new SavingsAccount(1004, "Anna", 0.0, 0.01);
+            acc1.Deposit(2000);
+            Console.WriteLine(acc1.Balance);
+
+
+            //DOWNCASTING
+            BussinessAccount acc4 = (BussinessAccount)acc2;
+            //error of casting
+            //BussinessAccount acc5 = (BussinessAccount)acc3;
+            if (acc3 is BussinessAccount)
+            {
+                //BussinessAccount acc5 = (BussinessAccount)acc3;
+                //Alternative Sintaxe
+                BussinessAccount acc5 = acc3 as BussinessAccount;
+
+                
+                acc5.Loan(200.00);
+                Console.WriteLine("Loan!");
+            }
+            
+            if(acc3 is SavingsAccount)
+            {
+                SavingsAccount acc5 = (SavingsAccount)acc3;
+                acc5.UpdateBalance();
+                Console.WriteLine("Update!");
+            }
+            
+            Console.WriteLine(acc4.LoanLimit);
+            
+
+
             Console.ReadKey();
         }
     }
