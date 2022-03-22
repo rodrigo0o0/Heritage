@@ -13,6 +13,9 @@ namespace Heritage
         {
 
             BussinessAccount ba = new BussinessAccount(100,"Rodrigo",1000.00,100.00);
+
+            Console.WriteLine(ba.Balance);
+            Console.ReadKey();
         }
     }
 }

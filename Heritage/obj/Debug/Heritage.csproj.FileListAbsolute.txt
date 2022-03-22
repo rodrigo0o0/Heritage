@@ -1,0 +1,8 @@
+C:\Users\sande\source\repos\Heritage\Heritage\bin\Debug\Heritage.exe.config
+C:\Users\sande\source\repos\Heritage\Heritage\bin\Debug\Heritage.exe
+C:\Users\sande\source\repos\Heritage\Heritage\bin\Debug\Heritage.pdb
+C:\Users\sande\source\repos\Heritage\Heritage\obj\Debug\Heritage.csproj.AssemblyReference.cache
+C:\Users\sande\source\repos\Heritage\Heritage\obj\Debug\Heritage.csproj.SuggestedBindingRedirects.cache
+C:\Users\sande\source\repos\Heritage\Heritage\obj\Debug\Heritage.csproj.CoreCompileInputs.cache
+C:\Users\sande\source\repos\Heritage\Heritage\obj\Debug\Heritage.exe
+C:\Users\sande\source\repos\Heritage\Heritage\obj\Debug\Heritage.pdb
