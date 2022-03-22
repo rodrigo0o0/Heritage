@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Heritage.Entities
 {
-    internal class SavingsAccount : Account
+    internal class  SavingsAccount : Account
     {
         public double InterestRate { get; set; }
 
@@ -24,10 +24,11 @@ namespace Heritage.Entities
             Balance += Balance * InterestRate;
 
         }
-        public override void Withdraw(double amount)
+        public sealed override void Withdraw(double amount)
         {
+            base.Withdraw(amount);
+            Balance -= 2.0;
             Console.WriteLine("Withdraw Savings Account");
-            Balance -= amount;
         }
 
     }
