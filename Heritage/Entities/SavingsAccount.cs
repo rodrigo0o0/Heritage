@@ -24,6 +24,11 @@ namespace Heritage.Entities
             Balance += Balance * InterestRate;
 
         }
+        public override void Withdraw(double amount)
+        {
+            Console.WriteLine("Withdraw Savings Account");
+            Balance -= amount;
+        }
 
     }
 }

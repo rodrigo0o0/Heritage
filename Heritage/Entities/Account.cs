@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Heritage
 {
+    //superclass
     internal class Account
     {
         public int Number { get; protected set; }
@@ -21,12 +22,11 @@ namespace Heritage
             Balance = balance;
         }
 
-        public void Withdraw(double amount)
+        public  virtual void Withdraw(double amount)
         {
-            if (amount > 0)
-            {
-                Balance -= amount;
-            }
+            Console.WriteLine("Withdraw Superclass Account");
+
+            Balance -= amount + 5.0;
         }
         public void Deposit(double amount)
         {

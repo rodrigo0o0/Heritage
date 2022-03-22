@@ -42,8 +42,8 @@ namespace Heritage
                 Console.WriteLine("Update!");
             }
             
+            acc3.Withdraw(1000.00);
             Console.WriteLine(acc4.LoanLimit);
-            
 
 
             Console.ReadKey();
